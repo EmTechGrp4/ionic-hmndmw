@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome to Model Fitness </h2>
+  <p>
+    This app is used for calculating the ideal bodyweight based on gender, age, and height
+  </p>
+  <p>
+    You can look great and be healthy in a wide range of weights, but it is worth noting that being underweight is associated with poor health outcomes and higher mortality for some conditions, as is being far above the healthy BMI range.
+
+  </p>
+  <p>
+    If your weight is above that of the ideal for your height on the charts, it is tempting to think that it is because you are lean but very muscular. This may be true in some cases, but most people usually weigh more because they have more body fat.
+  </p>
+  <p>
+ https://www.omnicalculator.com/health/ideal-weight#how-much-should-i-weight
+   </p>
+  <p>
+ 
+        <ion-item>
+      <ion-label> Height feet:
+      </ion-label>
+      <ion-input type-="number" [(ngModel)]="feet"></ion-input>
+    </ion-item>
+      <ion-item>
+      <ion-label> Inches:
+      </ion-label>
+      <ion-input type-="number" [(ngModel)]="inch"></ion-input>
+      </ion-item>
+      <ion-item>
+<ion-label> Gender:
+      </ion-label>
+      <ion-input type="string" [(ngModel)]="gender" ></ion-input>
+      </ion-item>
+       </p>
+  <p>
+    <button ion-button color="secondary"(click)="CalculateIW(feet,inch,gender)">
+      calculate
+    </button> 
+       </p>
+  <p>
+    <ion-item *ngIf="robinson">
+      <h2> Your ideal weight is: 
+        <p> Robinson: {{robinson}} kg</p>
+        <p> Miller: {{miller}} kg </p>
+        <p> Hamwi: {{hamwi}} kg </p>
+        <p> Devine: {{devine}} kg </p>
+      </h2>
+    </ion-item>
+    <ion-item *ngIf="message">
+      <h2>{{message}}</h2>
+    </ion-item>
+  </p>
+</ion-content>
+
+ 
