@@ -3,11 +3,13 @@ import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
+  styleUrls: ['home.css'],
 })
 export class HomePage {
   feet: number;
   inch: number;
+  new_inch: number;
   gender: string;
   robinson: number;
   miller: number;
@@ -21,21 +23,21 @@ export class HomePage {
     if(this.feet >= 5){
     if (this.gender == "M" || this.gender == "MALE"){
       if (this.feet > 5){
-        this.inch = this.inch * 1 + 12 * 1
+        this.new_inch = this.inch * 1 + 12 * 1
       }
-        this.robinson = this.inch * 1.9 + 52
-        this.miller = this.inch * 1.41 + 56.2
-        this.hamwi = this.inch * 2.7 + 48
-        this.devine = this.inch * 2.3 + 50
+        this.robinson = this.new_inch * 1.9 + 52
+        this.miller = this.new_inch * 1.41 + 56.2
+        this.hamwi = this.new_inch * 2.7 + 48
+        this.devine = this.new_inch * 2.3 + 50
     }
     if (this.gender == "F" || this.gender == "FEMALE"){
       if (this.feet > 5){
-        this.inch = this.inch * 1 + 12 * 1
+        this.new_inch = this.inch * 1 + 12 * 1
       }
-        this.robinson = this.inch * 1.7 + 49
-        this.miller = this.inch * 1.36 + 53
-        this.hamwi = this.inch * 2.2 + 45.5
-        this.devine = this.inch * 2.3 +45.5
+        this.robinson = this.new_inch * 1.7 + 49
+        this.miller = this.new_inch * 1.36 + 53
+        this.hamwi = this.new_inch * 2.2 + 45.5
+        this.devine = this.new_inch * 2.3 +45.5
       }
       this.message = ""
     }
