@@ -3,11 +3,14 @@ ion-content {
 }
 
 h2{
-   color: #17A589
+   color: (244, 76%, 37%);
+   font-family: 'Times New Roman', Times, serif;
+   text-align: Center;
 }
 
 p {
   color: #000000;
-  font:  Arial;
+  font: Arial, ;
+  font-size: small;
   text-align: justify;
 }
