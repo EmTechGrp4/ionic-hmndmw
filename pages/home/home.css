@@ -1,16 +1,18 @@
 ion-content {
-  background: linear-gradient(to bottom, #A1FFCE, #FAFFD1);
+  background: linear-gradient(to top, #2193b0, #6dd5ed);
 }
 
 h2{
    color: (244, 76%, 37%);
    font-family: 'Times New Roman', Times, serif;
    text-align: Center;
+   font-size: xx-large;
 }
 
 p {
   color: #000000;
   font: caption;
   font-size: small;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: justify;
 }
