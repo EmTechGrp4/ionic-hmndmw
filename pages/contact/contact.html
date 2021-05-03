@@ -1,17 +1,46 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      Calculator
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
+   <p>
+ 
+        <ion-item>
+      <ion-label> Height feet:
+      </ion-label>
+      <ion-input type-="number" [(ngModel)]="feet"></ion-input>
     </ion-item>
-  </ion-list>
+      <ion-item>
+      <ion-label> Inches:
+      </ion-label>
+      <ion-input type-="number" [(ngModel)]="inch"></ion-input>
+      </ion-item>
+      <ion-item>
+<ion-label> Gender:
+      </ion-label>
+      <ion-input type="string" [(ngModel)]="gender" ></ion-input>
+      </ion-item>
+       </p>
+  <p>
+    <button ion-button color="secondary"(click)="CalculateIW(feet,inch,gender)">
+      calculate
+    </button> 
+       </p>
+  <p>
+    <ion-item *ngIf="robinson">
+      <h2> Your ideal weight is: 
+        <p> Robinson: {{robinson}} kg</p>
+        <p> Miller: {{miller}} kg </p>
+        <p> Hamwi: {{hamwi}} kg </p>
+        <p> Devine: {{devine}} kg </p>
+      </h2>
+    </ion-item>
+    <ion-item *ngIf="message">
+      <h2>{{message}}</h2>
+    </ion-item>
+  </p>
 </ion-content>
