@@ -25,6 +25,7 @@ export class HomePage {
       if (this.feet > 5){
         this.new_inch = this.inch * 1 + 12 * 1
       }
+      
         this.robinson = this.new_inch * 1.9 + 52
         this.miller = this.new_inch * 1.41 + 56.2
         this.hamwi = this.new_inch * 2.7 + 48
