@@ -18,6 +18,8 @@ export class ContactPage {
   message: string;
   constructor(public navCtrl: NavController) {}
 
+
+
   CalculateIW(){
     this.gender = this.gender.toUpperCase();
     if(this.feet >= 5){
