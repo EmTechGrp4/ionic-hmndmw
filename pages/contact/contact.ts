@@ -31,7 +31,7 @@ export class ContactPage {
         this.devine = this.new_inch * 2.3 + 50
     }
     if (this.gender == "F" || this.gender == "FEMALE"){
-      if (this.feet > 5){
+      if (this.feet >= 5){
         this.new_inch = this.inch * 1 + 12 * 1
       }
         this.robinson = this.new_inch * 1.7 + 49
